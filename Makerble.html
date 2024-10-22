@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makerble My Home Redesign</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">Makerble</h1>
+            <nav class="flex space-x-4">
+                <a href="#" class="text-gray-700 hover:text-blue-500">Events</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Contacts</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Projects</a>
+                <a href="#" class="text-gray-700 hover:text-blue-500">Albums</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="container mx-auto my-8 grid grid-cols-12 gap-6">
+
+        <aside class="col-span-3 bg-white shadow-md p-4 rounded-lg">
+            <h2 class="font-semibold text-lg mb-4">Quick Access</h2>
+            <ul>
+                <li><a href="#" class="block text-gray-700 py-2 hover:bg-gray-100 rounded">Dashboard</a></li>
+                <li><a href="#" class="block text-gray-700 py-2 hover:bg-gray-100 rounded">Personal Progress</a></li>
+                <li><a href="#" class="block text-gray-700 py-2 hover:bg-gray-100 rounded">Tasks</a></li>
+                <li><a href="#" class="block text-gray-700 py-2 hover:bg-gray-100 rounded">Settings</a></li>
+            </ul>
+        </aside>
+
+
+        <section class="col-span-9 bg-white shadow-md p-6 rounded-lg">
+
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold">Welcome to Makerble!</h2>
+                <p class="text-gray-600">Here’s your recent activity and updates.</p>
+            </div>
+
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">News Feed</h3>
+                <div class="bg-gray-50 p-4 rounded-md shadow-sm mb-4">
+                    <p>Latest update about your projects and contacts...</p>
+                </div>
+            </div>
+
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Personal Progress</h3>
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="bg-green-100 p-4 rounded-md shadow-sm">Feeling Good</div>
+                    <div class="bg-red-100 p-4 rounded-md shadow-sm">Need Support</div>
+                    <div class="bg-yellow-100 p-4 rounded-md shadow-sm">Planning Events</div>
+                </div>
+            </div>
+
+
+            <div class="mb-6">
+                <h3 class="text-xl font-semibold mb-3">Tasks</h3>
+                <form id="task-form">
+                    <input type="text" id="new-task-input" class="border border-gray-300 p-2 rounded-md w-full mb-3" placeholder="Enter your task" />
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Add Task</button>
+                </form>
+                <ul id="task-list" class="mt-4">
+                    <li class="bg-gray-50 p-3 rounded-md shadow-sm mb-2">Complete user survey</li>
+                    <li class="bg-gray-50 p-3 rounded-md shadow-sm mb-2">Finish project report</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-gray-800 text-white p-4 mt-10">
+        <div class="container mx-auto text-center">
+            <p>© 2024 Makerble. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
